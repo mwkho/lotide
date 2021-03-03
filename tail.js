@@ -8,12 +8,10 @@ const assertEqual = function(actual, expected) {
   console.log(`Assertion ${status}: ${actual} ${equality} ${expected}.`);
 };
 
-let tail = function(arr) {
-  let cpy = arr.slice(); // making a copy of the array
-  if ((cpy.length === 0) || (cpy.length === 1)) {
-    return cpy;
-  } else {
-    cpy = cpy.slice(1);
-  }
-  return cpy;
+let tail = function(arr) { 
+  return arr.slice(1);
 };
+
+ const words = ["Yo Yo", "Lighthouse", "Labs"];
+ tail(words); // no need to capture the return value since we are not checking it
+ assertEqual(words.length, 3); // original array should still have 3 elements!
