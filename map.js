@@ -23,12 +23,12 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 //
 // map function starts here
 //
-const map = function(arr, callback){
-  const results = []; 
-  for (let item of arr){
+const map = function(arr, callback) {
+  const results = [];
+  for (let item of arr) {
     results.push(callback(item));
   }
-    return results;
+  return results;
 };
 
 
@@ -37,5 +37,5 @@ const falls = ['Helmecken falls', 'Norvan falls', 'Narin falls', 'Brandywine fal
 let results = map(falls, fall => fall[0]);
 assertArraysEqual(results, ['H', 'N', 'N', 'B']);
 
-assertArraysEqual(map([1,2,2,4], num => num**2), [1,4,4,16]);
+assertArraysEqual(map([1,2,2,4], num => num ** 2), [1,4,4,16]);
 assertArraysEqual(map(falls, name => name[2].length),[1,1,1,1]);
