@@ -8,10 +8,10 @@ const assertEqual = function(actual, expected) {
   console.log(`Assertion ${status}: ${actual} ${equality} ${expected}.`);
 };
 
-const findKeyByValue = function(myObject, val){
+const findKeyByValue = function(myObject, val) {
   let key;
-  for (let k of Object.keys(myObject)){
-    if (myObject[k] === val){
+  for (let k of Object.keys(myObject)) {
+    if (myObject[k] === val) {
       key = k;
       break;
     }
@@ -19,8 +19,8 @@ const findKeyByValue = function(myObject, val){
   return key;
 };
 
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
