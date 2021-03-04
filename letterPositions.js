@@ -34,19 +34,17 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 
 const letterPositions = function(sentence) {
   const results = {};
-  for (let i = 0; i < sentence.length; i++){
+  for (let i = 0; i < sentence.length; i++) {
     let character = sentence[i];
-    if (checkIsLetter(character)){
-      if (results[character]){
+    if (checkIsLetter(character)) {
+      if (results[character]) {
         results[character].push(i);
-      } else{
+      } else {
         results[character] = [i];
       }
     }
   }
-  // console.log(results);
   return results;
-
 };
 
 const checkIsLetter = function(letter) {
@@ -55,7 +53,7 @@ const checkIsLetter = function(letter) {
   return (abc.indexOf(letter) !== -1);
 };
 
-let myStr = '"Lighthouse in the house"'
+let myStr = '"Lighthouse in the house"';
 let results = letterPositions(myStr);
 
 assertArraysEqual(results["h"], [4,6,16,19]);
