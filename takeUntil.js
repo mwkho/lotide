@@ -25,13 +25,13 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 const takeUntil = function(array1, callback) {
   let results = [];
   // set a switch value to turn off the push to the array
-  let switchVal = true; 
+  let switchVal = true;
   // for each item in array, check the callback function
-  for (let item of array1){
+  for (let item of array1) {
   // if the callback is false and switch is on, push the result
-    if (!callback(item) && switchVal){
+    if (!callback(item) && switchVal) {
       results.push(item);
-    } else{ // o/w switch is off and stop adding to results
+    } else { // o/w switch is off and stop adding to results
       switchVal = false;
     }
   }
