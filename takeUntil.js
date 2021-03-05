@@ -26,15 +26,15 @@ const takeUntil = function(array1, callback) {
   let results = [];
   let i = 0;
   // if the callback is true and the index is less then the array length
-  // continue to add; 
-  while (!callback(array1[i]) && i < array1.length){
+  // continue to add;
+  while (!callback(array1[i]) && i < array1.length) {
     results.push(array1[i]);
     i++;
   }
   return results;
 };
 
-
+/**
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
 console.log(results1);
@@ -48,4 +48,5 @@ console.log('---');
 
 const data3 = [];
 const results3 = takeUntil(data3, x => x < 0);
-console.log(results3)
+console.log(results3);
+**/
