@@ -11,13 +11,27 @@ const assertEqual = function(actual, expected) {
 const findKey = function(object1, callback){
   let found;
   let keys = Object.keys(object1);
-  // use a for indexed for loop with a modfiied break statment
-  // if the key doesn't match callback, continue searching
+  
+
+  // assuming for each key, the value is another object,
+  // can filter out the pertinent information
   for (let key of keys){
-    if (callback(key)){
-      return key;
+    if (callback(object1[key])){
+      found = key;
+      break;
     }
   }
   return found;
 }
 
+let test = findKey({
+  "Blue Hill": { stars: 1 },
+  "Akaleri":   { stars: 3 },
+  "noma":      { stars: 2 },
+  "elBulli":   { stars: 3 },
+  "Ora":       { stars: 2 },
+  "Akelarre":  { stars: 3 }
+}, x => x.stars === 2) // => "noma"
+
+
+assertEqual(test, 'noma');
