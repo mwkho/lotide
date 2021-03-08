@@ -1,4 +1,4 @@
-let eqArrays = require(eqArrays);
+let eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(arrayOne, arrayTwo) {
   let status = '!==';
