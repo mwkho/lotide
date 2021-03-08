@@ -1,4 +1,4 @@
-let tail = function(arr) { 
+let tail = function(arr) {
   return arr.slice(1);
 };
 
