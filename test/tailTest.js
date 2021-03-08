@@ -1,7 +1,14 @@
 let tail = require('../tail');
 let assertEqual  = require('../assertEqual');
 
-assertEqual(tail([1]), []);
-assertEqual(tail([]), []);
-assertEqual(tail([1,23,4]), [23,4]);
+
+let emptyArr = [];
+
+assertEqual(tail([]).length, 0);
+
+let arr1 = [1];
+assertEqual(tail([1]).length, 0);
+
+
+assertEqual(tail([1,23,4]).length, 2);
   
