@@ -1,13 +1,3 @@
-const assertEqual = function(actual, expected) {
-  let equality =  '!==';
-  let status = 'Failed';
-  if (actual === expected) {
-    equality = '===';
-    status = 'Passed';
-  }
-  console.log(`Assertion ${status}: ${actual} ${equality} ${expected}.`);
-};
-
 const countLetters = function(myStr) {
   let result = {};
   for (let character of myStr) {
@@ -24,14 +14,4 @@ const checkIsLetter = function(letter) {
   return (abc.indexOf(letter) !== -1);
 };
 
-/*
-let myString = 'this is a Loo0ng string of various character!';
-let result = countLetters(myString);
-
-assertEqual(result['L'], 1);
-assertEqual(result['!'], undefined);
-assertEqual(result[' '], undefined);
-assertEqual(result[''], undefined);
-assertEqual(result['0'], undefined);
-assertEqual(result['o'], 4);
-*/
+module.exports = countLetters;
