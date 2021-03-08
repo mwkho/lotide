@@ -1,13 +1,9 @@
-const assertEqual = function(actual, expected) {
-  let equality =  '!==';
-  let status = 'Failed';
-  if (actual === expected) {
-    equality = '===';
-    status = 'Passed';
-  }
-  console.log(`Assertion ${status}: ${actual} ${equality} ${expected}.`);
-};
+const assertEqual = require("./assertEqual");
 
 const head = function(arr1) {
   return arr1[0];
 };
+
+assertEqual(head([1,2,3]),1); 
+
+module.exports = head;
