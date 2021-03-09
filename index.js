@@ -9,14 +9,14 @@ const letterPositions = require('./letterPositions');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
-
+const eqArrays = require('./eqArrays');
+const eqObjects = require('./eqObjects');
 
 
 module.exports = {
   head,
   tail,
   middle,
-
   countLetters,
   countOnly,
   findKey,
@@ -24,5 +24,7 @@ module.exports = {
   letterPositions, 
   map,
   takeUntil,
-  without
+  without,
+  eqArrays,
+  eqObjects
 };
