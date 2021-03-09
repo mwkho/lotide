@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@nitram/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simpler version of the Lodash module created for the Lighthouse Lab BootCamp. Not too be used for professional means",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/mwkho/lotide.git"
   },
-  "author": "",
+  "author": "Martin Ho",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mwkho/lotide/issues"
