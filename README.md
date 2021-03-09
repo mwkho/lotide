@@ -48,4 +48,8 @@ The following functions are currently implemented:
 
 * `without(source, removeItems)`:Return a subset of a given array source, removing unwanted elements defined in the array removeItems. 
 
+* `eqObjects(object1, object2)`: Returns true if and only if the inputs object1 and object2 are equal deeply, keys and values.
+
+* `eqArrays(arr1, arr2)`: Returns true if the two arrays arr1 and arr2 are equal.
+
 
