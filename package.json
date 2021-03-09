@@ -2,7 +2,7 @@
   "name": "@nitram/lotide",
   "version": "1.0.0",
   "description": "A simpler version of the Lodash module created for the Lighthouse Lab BootCamp. Not too be used for professional means",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
